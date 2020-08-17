@@ -9,40 +9,7 @@
       <!-- Add icon library -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style> 
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #F1F1F1;
-}
-
-li {
-  float: left;
-  border-right:1px solid #bbb;
-}
-
-li:last-child {
-  border-right: none;
-}
-
-li a {
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover:not(.active) {
-  background-color: #2196F3;
-}
-
-.active {
-  background-color: #2196F3;
-}
-
+   
 .container {
   width: 850px;
   clear: both;
@@ -113,13 +80,12 @@ body {
        <div class="w3-container w3-blue"> 
         <h1 style="text-shadow:1px 1px 0 #444" align="left">&#x27BD; Rutha McMears & Son</h1>
       </div> 
-     <ul>
-  <li><a class="active" href="#">Home</a></li>
-  <li><a href="#">Accounts</a></li>
-  <li><a href="#">Contact</a></li>
-  <li><a onclick="help()">Disclaimer</a></li>
-  <li style="float:right"><a href="#about">About</a></li>
-</ul> 
+     <div class="w3-bar w3-border w3-light-grey">
+   <a href="index.html" class="w3-bar-item w3-button w3-border-right">Logout</a>
+  <a onclick="accounts()" class="w3-bar-item w3-button w3-border-right">Accounts</a>
+   <a onclick="help()" class="w3-bar-item w3-button w3-border-right">Disclaimer</a>
+    <a onclick="transfer()" class="w3-bar-item w3-button w3-border-right">Transfer & Pay</a>
+     </div>
 
       <div id="cookieConsent">
     <div id="closeCookieConsent">x</div>
